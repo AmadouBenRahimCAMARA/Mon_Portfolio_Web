@@ -1,6 +1,5 @@
 databases:
   - name: database # Ceci est le nom de votre instance de base de données
-    # La propriété 'type: postgres' a été supprimée car elle n'est pas valide ici.
     plan: free # Ou un plan payant si nécessaire
     databaseName: portfolio_db # Spécifie le nom de la base de données
 
@@ -19,7 +18,7 @@ services:
         fromService:
           type: web
           name: react-frontend
-          property: url
+          property: host # Corrigé de 'url' à 'host'
       - key: DB_CONNECTION
         value: pgsql
       - key: DB_HOST
@@ -33,7 +32,7 @@ services:
       - key: DB_DATABASE
         fromDatabase:
           name: database
-          property: database # Ceci récupérera maintenant 'portfolio_db'
+          property: database
       - key: DB_USERNAME
         fromDatabase:
           name: database
@@ -57,4 +56,4 @@ services:
         fromService:
           type: web
           name: laravel-backend
-          property: url
+          property: host # Corrigé de 'url' à 'host'
