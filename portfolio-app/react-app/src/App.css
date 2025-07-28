@@ -18,6 +18,10 @@ body {
   overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
