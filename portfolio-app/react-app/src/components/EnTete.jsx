@@ -19,7 +19,7 @@ const Header = () => {
               <li><a href="#about">À propos</a></li>
               <li><a href="#skills">Compétences</a></li>
               <li><a href="#projects">Projets</a></li>
-              <li><a href="#education">Formation</a></li>
+              <li><a href="#formation">Formation</a></li>
               <li><a href="#hobbies">Mes Hobbies</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -49,7 +49,7 @@ const Header = () => {
           <a href="#about" onClick={toggleMenu}>À propos</a>
           <a href="#skills" onClick={toggleMenu}>Compétences</a>
           <a href="#projects" onClick={toggleMenu}>Projets</a>
-          <a href="#education" onClick={toggleMenu}>Formation</a>
+          <a href="#formation" onClick={toggleMenu}>Formation</a>
           <a href="#hobbies" onClick={toggleMenu}>Mes Hobbies</a>
           <a href="#contact" onClick={toggleMenu}>Contact</a>
         </div>

@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Education = () => {
+const Formation = () => {
   return (
-    <section id="education">
+    <section id="formation">
       <div className="container">
         <h2>Formation</h2>
         <motion.div
-          className="education-card"
+          className="formation-card"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -22,4 +22,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Formation;

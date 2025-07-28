@@ -329,8 +329,8 @@ a:hover {
   transform: scale(1.08); /* Agrandissement plus prononcé */
 }
 
-/* Education Section */
-.education-card {
+/* Formation Section */
+.formation-card {
   background-color: var(--color-dark-card);
   padding: 40px;
   border-radius: 20px;
@@ -340,19 +340,19 @@ a:hover {
   text-align: center;
 }
 
-.education-card h3 {
+.formation-card h3 {
   font-size: 2.5em;
   margin-bottom: 10px;
   color: var(--color-accent-blue); /* Titre en bleu */
 }
 
-.education-card .university {
+.formation-card .university {
   color: var(--color-text-light); /* Nom de l'université en blanc */
   font-size: 1.6em;
   margin-bottom: 20px;
 }
 
-.education-card p {
+.formation-card p {
   color: var(--color-text-dark);
   font-size: 1.2em;
 }
