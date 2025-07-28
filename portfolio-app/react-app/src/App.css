@@ -175,7 +175,7 @@ a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 10, 10, 0.98);
+  background-color: blue; /* Forcing solid blue for debugging */
   backdrop-filter: blur(20px);
   z-index: 1001;
   transform: translateX(100%);
