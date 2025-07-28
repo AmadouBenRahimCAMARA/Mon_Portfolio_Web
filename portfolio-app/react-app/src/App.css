@@ -180,7 +180,10 @@ a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000; /* Fully opaque black */
+  background-color: blue !important; /* DEBUG: Forcing blue for ultimate visibility */
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
   z-index: 1001;
   transform: translateX(100%);
   transition: transform 0.4s ease-out;
