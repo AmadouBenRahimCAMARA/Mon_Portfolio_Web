@@ -89,7 +89,7 @@ a:hover {
 
 .header-nav .logo {
   color: var(--color-accent-blue); /* Logo en bleu */
-  font-size: 1.5em; /* Encore plus petit */
+  font-size: 1.8em; /* Taille ajustée */
   font-weight: 900; /* Très gras */
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -121,7 +121,7 @@ a:hover {
   display: inline-block; /* Pour que padding et background fonctionnent */
   background-color: #007bff; /* Un bleu un peu moins éclatant */
   color: var(--color-text-light);
-  font-size: 0.8em; /* Taille ajustée pour les boutons */
+  font-size: 1.0em; /* Taille ajustée pour les boutons */
   font-weight: 600;
   padding: 3px 10px; /* Padding pour l'effet bouton */
   border-radius: 25px; /* Coins arrondis */
