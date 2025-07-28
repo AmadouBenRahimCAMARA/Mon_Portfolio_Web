@@ -235,9 +235,9 @@ a:hover {
 .mobile-menu a {
   display: block;
   padding: 15px 25px; /* More padding */
-  color: var(--color-text-light); /* White text for visibility */
-  background-color: rgba(0, 191, 255, 0.1); /* Subtle blue background */
-  text-shadow: 0 0 5px rgba(0, 191, 255, 0.3); /* Subtle blue text shadow */
+  color: var(--color-text-light) !important; /* Force white text */
+  background-color: rgba(10, 10, 10, 0.9) !important; /* Force dark background */
+  text-shadow: 0 0 5px var(--color-accent-blue) !important; /* Force blue text shadow */
   font-size: 1.5em; /* Larger font size */
   font-weight: 700; /* Bolder text */
   text-align: center;
