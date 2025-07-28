@@ -1,7 +1,7 @@
 services:
   - type: web
     name: laravel-backend
-    env: php
+    runtime: php
     rootDir: ./portfolio-app
     buildCommand: |
       composer install --no-dev --optimize-autoloader
@@ -43,6 +43,7 @@ services:
           property: password
   - type: static
     name: react-frontend
+    runtime: node
     rootDir: ./portfolio-app/react-app
     buildCommand: npm install && npm run build
     publishDir: ./dist
