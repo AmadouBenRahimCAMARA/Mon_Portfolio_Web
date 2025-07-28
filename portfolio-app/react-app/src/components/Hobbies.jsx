@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { FaMusic, FaTv, FaRunning } from 'react-icons/fa'; // FaTv pour les séries
 

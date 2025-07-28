@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 
 const Formation = () => {
@@ -15,7 +16,7 @@ const Formation = () => {
         >
           <h3>Licence en Ingénierie des Systèmes d'Information</h3>
           <p className="university">Université Nazi Boni - Campus de Bobo-Dioulasso</p>
-          <p>Description de la formation, compétences acquises, etc.</p>
+          <p>Niveau BAC+3, obtenue en ---, etc.</p>
         </motion.div>
       </div>
     </section>
