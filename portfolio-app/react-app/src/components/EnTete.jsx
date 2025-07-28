@@ -45,7 +45,7 @@ const Header = () => {
 
       {/* Mobile menu, show/hide based on menu state. */}
       <div className={`mobile-menu md:hidden ${isOpen ? 'open' : ''}`} id="mobile-menu">
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="mobile-menu-links">
           <a href="#about" onClick={toggleMenu}>À propos</a>
           <a href="#skills" onClick={toggleMenu}>Compétences</a>
           <a href="#projects" onClick={toggleMenu}>Projets</a>

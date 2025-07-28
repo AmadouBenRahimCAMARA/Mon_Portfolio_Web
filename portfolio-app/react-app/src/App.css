@@ -133,52 +133,89 @@ a:hover {
 
 
 
-/* Mobile Menu */
+/* Mobile Menu Button - Modernization */
 .mobile-menu-button {
-  display: none; /* Caché par défaut sur desktop */
-  background: none;
-  border: none;
-  color: var(--color-accent-blue); /* Bouton en bleu */
-  font-size: 2em; /* Plus grand */
+  display: none; /* Keep hidden on desktop */
+  background: var(--color-dark-card); /* A subtle background */
+  border: 1px solid var(--color-accent-blue); /* A thin border */
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 10px; /* More padding for clickability */
+  color: var(--color-accent-blue);
   cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
 }
 
+.mobile-menu-button:hover {
+  background-color: var(--color-accent-blue-dark);
+  border-color: var(--color-accent-blue);
+  transform: scale(1.05);
+}
+
+.mobile-menu-button svg {
+  display: block; /* Ensure SVG takes up space */
+  height: 24px; /* Standard size */
+  width: 24px; /* Standard size */
+  color: var(--color-accent-blue); /* Icon color */
+}
+
+/* Mobile Menu - Modernization */
 .mobile-menu {
-  display: none;
-  padding: 20px 0;
-  text-align: center;
-  background-color: rgba(10, 10, 10, 0.95); /* Fond plus sombre */
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  position: fixed; /* Full screen overlay */
+  top: 0;
+  right: 0; /* Start from the right */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(10, 10, 10, 0.98); /* More opaque background */
+  backdrop-filter: blur(20px); /* Stronger blur effect */
+  z-index: 999; /* Below header, above content */
+  transform: translateX(100%); /* Hidden by default, slides in from right */
+  transition: transform 0.4s ease-out; /* Smooth slide animation */
+  display: flex; /* Use flex for centering content */
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 0; /* Remove default padding */
+  box-shadow: none; /* Remove box-shadow, handled by backdrop-filter */
+}
+
+.mobile-menu.open {
+  transform: translateX(0); /* Slide in */
+}
+
+.mobile-menu-links { /* New class for the menu content */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* More space between links */
+  width: 80%; /* Constrain width */
+  max-width: 300px; /* Max width for menu content */
 }
 
 .mobile-menu a {
   display: block;
-  padding: 15px 0;
+  padding: 15px 25px; /* More padding */
   color: var(--color-text-light);
-  font-size: 1.2em;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.5em; /* Larger font size */
+  font-weight: 700; /* Bolder text */
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 191, 255, 0.2); /* Subtle separator */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  border-radius: 10px; /* Rounded corners for links */
+}
+
+.mobile-menu a:last-child {
+  border-bottom: none; /* No border for the last item */
 }
 
 .mobile-menu a:hover {
-  background-color: rgba(0, 191, 255, 0.1); /* Bleu très léger au survol */
+  background-color: rgba(0, 191, 255, 0.15); /* Slightly stronger hover */
   color: var(--color-accent-blue);
+  transform: scale(1.02); /* Subtle scale on hover */
 }
 
+/* Adjust media query for mobile menu button display */
 @media (max-width: 768px) {
-  .header-nav .nav-links {
-    display: none; /* Cacher sur mobile */
-  }
-
   .mobile-menu-button {
-    display: block; /* Afficher sur mobile */
-  }
-
-  .mobile-menu.open {
-    display: block;
+    display: block; /* Show on mobile */
   }
 }
 
