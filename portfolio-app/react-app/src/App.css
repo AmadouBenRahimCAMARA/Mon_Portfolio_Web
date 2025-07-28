@@ -93,7 +93,13 @@ a:hover {
 }
 
 .header-nav .nav-links {
-  display: block; /* Par défaut visible sur desktop */
+  display: none; /* Hidden by default */
+}
+
+@media (min-width: 768px) { /* Show on desktop */
+  .header-nav .nav-links {
+    display: block;
+  }
 }
 
 .header-nav .nav-links ul {
@@ -131,11 +137,9 @@ a:hover {
   content: none;
 }
 
-
-
 /* Mobile Menu Button - Modernization */
 .mobile-menu-button {
-  display: none; /* Keep hidden on desktop */
+  display: block; /* Show by default on mobile */
   background: var(--color-dark-card); /* A subtle background */
   border: 1px solid var(--color-accent-blue); /* A thin border */
   border-radius: 8px; /* Slightly rounded corners */
@@ -143,6 +147,12 @@ a:hover {
   color: var(--color-accent-blue);
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+@media (min-width: 768px) { /* Hide on desktop */
+  .mobile-menu-button {
+    display: none;
+  }
 }
 
 .mobile-menu-button:hover {
@@ -235,12 +245,6 @@ a:hover {
   transform: scale(1.02); /* Subtle scale on hover */
 }
 
-/* Adjust media query for mobile menu button display */
-@media (max-width: 768px) {
-  .mobile-menu-button {
-    display: block; /* Show on mobile */
-  }
-}
 
 /* About Section */
 .about-content {
