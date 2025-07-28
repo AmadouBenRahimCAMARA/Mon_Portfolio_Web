@@ -20,6 +20,7 @@ body {
 
 body.no-scroll {
   overflow: hidden;
+  background-color: lime !important; /* DEBUG: Forcing a very visible background */
 }
 
 .container {
