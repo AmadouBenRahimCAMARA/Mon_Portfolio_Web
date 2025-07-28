@@ -74,6 +74,7 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 1000; /* S'assurer qu'il est au-dessus de tout */
+  height: 30px; /* DEBUG: Forcing a very small height */
   background-color: rgba(100, 0, 150, 0.5); /* Violet avec opacité */
   backdrop-filter: blur(15px); /* Plus de flou */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
