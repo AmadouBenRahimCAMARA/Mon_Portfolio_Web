@@ -1,3 +1,8 @@
+databases:
+  - name: database
+    type: postgres
+    plan: free
+
 services:
   - type: web
     name: laravel-backend
@@ -17,28 +22,23 @@ services:
       - key: DB_CONNECTION
         value: pgsql
       - key: DB_HOST
-        fromService:
-          type: postgresql
+        fromDatabase:
           name: database
           property: host
       - key: DB_PORT
-        fromService:
-          type: postgresql
+        fromDatabase:
           name: database
           property: port
       - key: DB_DATABASE
-        fromService:
-          type: postgresql
+        fromDatabase:
           name: database
           property: database
       - key: DB_USERNAME
-        fromService:
-          type: postgresql
+        fromDatabase:
           name: database
           property: user
       - key: DB_PASSWORD
-        fromService:
-          type: postgresql
+        fromDatabase:
           name: database
           property: password
 
@@ -57,7 +57,3 @@ services:
           type: web
           name: laravel-backend
           property: url
-
-  - type: postgresql
-    name: database
-    plan: free
