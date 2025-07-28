@@ -235,9 +235,9 @@ a:hover {
 .mobile-menu a {
   display: block;
   padding: 15px 25px; /* More padding */
-  color: var(--color-accent-blue); /* Ensure text color is visible and contrasting */
-  background-color: rgba(0, 191, 255, 0.15); /* Increased opacity for better visibility */
-  text-shadow: 0 0 8px rgba(0, 191, 255, 0.5); /* Add text shadow for pop-out effect */
+  color: red; /* Forcing red for debugging */
+  background-color: white; /* Forcing white for debugging */
+  text-shadow: none; /* Remove text shadow for debugging */
   font-size: 1.5em; /* Larger font size */
   font-weight: 700; /* Bolder text */
   text-align: center;
