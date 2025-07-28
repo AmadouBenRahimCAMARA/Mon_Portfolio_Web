@@ -41,7 +41,7 @@ services:
           type: pserv
           name: database
           property: password
-  - type: static
+  - type: web
     name: react-frontend
     runtime: node
     rootDir: ./portfolio-app/react-app
