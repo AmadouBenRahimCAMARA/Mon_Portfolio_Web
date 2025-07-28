@@ -202,7 +202,7 @@ a:hover {
 }
 
 .mobile-menu-header .logo {
-  color: var(--color-accent-blue);
+  color: #FFFFFF; /* Force white for visibility */
   font-size: 1.8em; /* Smaller logo for mobile menu header */
   font-weight: 900;
   letter-spacing: 1px;
