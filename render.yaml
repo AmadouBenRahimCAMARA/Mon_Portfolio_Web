@@ -6,7 +6,7 @@ databases:
 services:
   - type: web
     name: laravel-backend
-    runtime: php # Corrigé de 'node' à 'php'
+    runtime: node # Corrigé de 'node' à 'php'
     rootDir: ./portfolio-app
     buildCommand: |
       composer install --no-dev --optimize-autoloader
