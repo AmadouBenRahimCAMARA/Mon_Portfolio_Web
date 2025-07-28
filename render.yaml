@@ -1,7 +1,7 @@
 services:
   - type: web
     name: laravel-backend
-    runtime: php
+    env: php
     rootDir: ./portfolio-app
     buildCommand: |
       composer install --no-dev --optimize-autoloader
