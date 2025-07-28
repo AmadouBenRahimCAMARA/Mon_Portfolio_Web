@@ -1,12 +1,12 @@
 databases:
-  - name: database # Ceci est le nom de votre instance de base de données
-    plan: free # Ou un plan payant si nécessaire
-    databaseName: portfolio_db # Spécifie le nom de la base de données
+  - name: database
+    plan: free
+    databaseName: portfolio_db
 
 services:
   - type: web
     name: laravel-backend
-    runtime: node # Corrigé de 'node' à 'php'
+    runtime: php
     rootDir: ./portfolio-app
     buildCommand: |
       composer install --no-dev --optimize-autoloader
@@ -16,7 +16,7 @@ services:
     envVars:
       - key: APP_URL
         fromService:
-          type: web
+          type: static # Changé de 'web' à 'static'
           name: react-frontend
           property: host
       - key: DB_CONNECTION
@@ -42,15 +42,14 @@ services:
           name: database
           property: password
 
-  - type: web
+  - type: static # Changé de 'web' à 'static'
     name: react-frontend
-    runtime: node
     rootDir: ./portfolio-app/react-app
     buildCommand: |
       npm install
       npm run build
-      npm install -g serve
-    startCommand: serve -s dist -l $PORT
+    # Suppression de 'runtime', 'npm install -g serve' et 'startCommand'
+    publicPath: ./dist # Utilisation de 'publicPath' pour les sites statiques
     envVars:
       - key: VITE_API_URL
         fromService:
