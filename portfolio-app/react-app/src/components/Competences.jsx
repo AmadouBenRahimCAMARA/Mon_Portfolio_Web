@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaPhp, FaLaravel } from 'react-icons/fa';
 import { SiPostgresql, SiUml } from 'react-icons/si';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 
 const skills = [
