@@ -6,7 +6,7 @@ databases:
 services:
   - type: web
     name: laravel-backend
-    runtime: php
+    runtime: php # Corrigé de 'node' à 'php'
     rootDir: ./portfolio-app
     buildCommand: |
       composer install --no-dev --optimize-autoloader
@@ -18,7 +18,7 @@ services:
         fromService:
           type: web
           name: react-frontend
-          property: host # Corrigé de 'url' à 'host'
+          property: host
       - key: DB_CONNECTION
         value: pgsql
       - key: DB_HOST
@@ -56,4 +56,4 @@ services:
         fromService:
           type: web
           name: laravel-backend
-          property: host # Corrigé de 'url' à 'host'
+          property: host
