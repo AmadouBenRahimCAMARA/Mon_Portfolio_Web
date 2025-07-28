@@ -120,9 +120,9 @@ a:hover {
   display: inline-block; /* Pour que padding et background fonctionnent */
   background-color: #007bff; /* Un bleu un peu moins éclatant */
   color: var(--color-text-light);
-  font-size: 0.8em; /* Rétablir la taille */
+  font-size: 1.0em; /* Augmenter la taille des liens */
   font-weight: 600;
-  padding: 3px 10px; /* Rétablir le padding */
+  padding: 5px 15px; /* Augmenter le padding des liens */
   border-radius: 25px; /* Coins arrondis */
   text-shadow: 0 0 10px rgba(0, 191, 255, 0.4); /* Ombre plus prononcée par défaut */
   transition: background-color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
