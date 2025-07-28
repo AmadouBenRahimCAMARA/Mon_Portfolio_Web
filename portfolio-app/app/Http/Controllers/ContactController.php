@@ -16,8 +16,7 @@ class ContactController extends Controller
             'message' => 'required',
         ]);
 
-        Mail::to('your_actual_email@example.com')->send(new ContactMail($request->all())); // REMPLACEZ CECI PAR VOTRE VRAIE ADRESSE EMAIL
-
+        Mail::to('amadou.ben.rahim.camara@gmail.com')->send(new ContactMail($request->all())); 
         return response()->json(['message' => 'Message sent successfully!']);
     }
 }
