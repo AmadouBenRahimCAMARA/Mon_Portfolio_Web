@@ -1,7 +1,8 @@
 databases:
-  - name: database
-    type: postgres
-    plan: free
+  - name: database # Ceci est le nom de votre instance de base de données
+    # La propriété 'type: postgres' a été supprimée car elle n'est pas valide ici.
+    plan: free # Ou un plan payant si nécessaire
+    databaseName: portfolio_db # Spécifie le nom de la base de données
 
 services:
   - type: web
@@ -32,7 +33,7 @@ services:
       - key: DB_DATABASE
         fromDatabase:
           name: database
-          property: database
+          property: database # Ceci récupérera maintenant 'portfolio_db'
       - key: DB_USERNAME
         fromDatabase:
           name: database
