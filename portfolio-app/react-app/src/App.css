@@ -199,29 +199,7 @@ a:hover {
   gap: 20px;
   width: 80%;
   max-width: 300px;
-  max-height: calc(100% - 100px); /* Ensure it doesn't exceed screen height, leaving space for padding */
-  overflow-y: auto; /* Enable scrolling if content overflows */
-  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
-}
-
-/* Add a scrollbar style for better visibility if needed */
-.mobile-menu-links::-webkit-scrollbar {
-  width: 8px;
-}
-
-.mobile-menu-links::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-}
-
-.mobile-menu-links::-webkit-scrollbar-thumb {
-  background: var(--color-accent-blue);
-  border-radius: 10px;
-}
-
-.mobile-menu-links::-webkit-scrollbar-thumb:hover {
-  background: var(--color-accent-blue-dark);
-}
+  }
 
 .mobile-menu a {
   display: block;
@@ -245,6 +223,18 @@ a:hover {
   transform: scale(1.02); /* Subtle scale on hover */
 }
 
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 
 /* About Section */
 .about-content {
