@@ -74,7 +74,7 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 1000; /* S'assurer qu'il est au-dessus de tout */
-  background-color: rgba(40, 40, 40, 0.8); /* Gris foncé légèrement moins sombre */
+  background-color: rgba(100, 100, 100, 0.8); /* Gris très clair avec opacité */
   backdrop-filter: blur(15px); /* Plus de flou */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
   padding: 20px 0; /* Plus de padding */
