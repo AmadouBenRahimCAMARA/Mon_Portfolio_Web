@@ -202,13 +202,11 @@ a:hover {
 }
 
 .mobile-menu-header .logo {
-  color: #FFFFFF !important; /* Force white for visibility */
-  font-size: 3em !important; /* Temporarily increase size for debugging */
-  font-weight: 900; /* Très gras */
-  letter-spacing: 2px;
+  color: #FFFFFF; /* Force white for visibility */
+  font-size: 1.8em; /* Smaller logo for mobile menu header */
+  font-weight: 900;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  z-index: 9999 !important; /* Force z-index */
-  opacity: 1 !important; /* Force opacity */
 }
 
 .mobile-menu-header button {
