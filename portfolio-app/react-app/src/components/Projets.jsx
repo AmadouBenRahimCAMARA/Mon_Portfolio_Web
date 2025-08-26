@@ -1,6 +1,6 @@
 import React from 'react';
-// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import './Projets.css';
 
 const projects = [
   {
@@ -8,16 +8,15 @@ const projects = [
     description: 'Une plateforme de gestion de tontines en ligne, permettant aux utilisateurs de créer, rejoindre et gérer des groupes de tontine de manière simple et sécurisée.',
     technologies: ['React', 'Laravel', 'PostgreSQL', 'CSS'],
     link: '#',
-    image: 'https://via.placeholder.com/400x250/1E293B/E2E8F0?text=Projet+Tontines', // Placeholder image
+    image: '/Tontine.png',
   },
   {
     title: 'Portfolio Personnel',
     description: 'Ce site web que vous êtes en train de consulter ! Développé pour présenter mes compétences et mes projets de manière interactive et moderne.',
     technologies: ['React', 'CSS', 'Framer Motion'],
     link: '#',
-    image: 'https://via.placeholder.com/400x250/1E293B/E2E8F0?text=Mon+Portfolio', // Placeholder image
+    image: '/codage.jpeg',
   },
-  // Ajoutez d'autres projets ici
 ];
 
 const Projects = () => {
@@ -33,8 +32,7 @@ const Projects = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              viewport={{ once: false, amount: 0.3 }}
-              whileHover={{ scale: 1.03, boxShadow: "0 10px 20px rgba(0, 191, 255, 0.4)" }}
+              viewport={{ once: true, amount: 0.3 }}
             >
               <img src={project.image} alt={project.title} />
               <div className="project-card-content">

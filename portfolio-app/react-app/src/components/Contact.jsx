@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import './Contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -44,17 +44,16 @@ const Contact = () => {
         <div className="contact-info">
           <p><strong>Email:</strong> <a href="mailto:amadou.ben.rahim.camara@gmail.com">amadou.ben.rahim.camara@gmail.com</a></p>
           <p><strong>Téléphone:</strong> +226 74 50 56 43</p>
-          <p><strong>Adresse:</strong> Bobo-Dioulasso secteur 09 Accart-Ville Sud, Burkina Faso</p>
         </div>
-        <h3>Envoyez-moi un message</h3>
-        <motion.form 
-          onSubmit={handleSubmit} 
+        <motion.form
+          onSubmit={handleSubmit}
           className="contact-form-card"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true, amount: 0.3 }}
         >
+          <h3>Envoyez-moi un message</h3>
           <div className="form-group">
             <label htmlFor="name">Nom</label>
             <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Votre nom" required />
@@ -68,8 +67,8 @@ const Contact = () => {
             <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="5" placeholder="Votre message" required></textarea>
           </div>
           <div className="text-center">
-            <motion.button 
-              type="submit" 
+            <motion.button
+              type="submit"
               className="submit-button"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -84,4 +83,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

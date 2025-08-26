@@ -7,10 +7,12 @@ import Formation from './components/Formation';
 import Contact from './components/Contact';
 import Hobbies from './components/Hobbies';
 import PiedDePage from './components/PiedDePage';
+import Cursor from './components/Cursor';
 
 function App() {
   return (
     <div>
+      <Cursor />
       <EnTete />
       <APropos />
       <Competences />

@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import './PiedDePage.css';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 py-6">
+    <footer className="footer">
       <div className="container footer-content">
-        <p>&copy; {new Date().getFullYear()} Amadou Ben Rahim CAMARA. Tous droits réservés.</p>
         <div className="footer-social-links">
           <a href="https://github.com/AmadouBenRahimCAMARA" target="_blank" rel="noopener noreferrer">
             <FaGithub size={24} />
@@ -14,6 +14,7 @@ const Footer = () => {
             <FaLinkedin size={24} />
           </a>
         </div>
+        <p>&copy; {new Date().getFullYear()} Amadou Ben Rahim CAMARA. Tous droits réservés.</p>
       </div>
     </footer>
   );

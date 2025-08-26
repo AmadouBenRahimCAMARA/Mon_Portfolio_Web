@@ -1,0 +1,23 @@
+/* === HOBBIES STYLES === */
+
+#hobbies {
+    background-color: var(--card-bg);
+}
+
+.hobbies-horizontal-display {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hobby-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hobby-item svg {
+  color: var(--accent-color);
+}
