@@ -53,7 +53,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h3>Envoyez-moi un message</h3>
+          <h3>Vous voulez réaliser une idée de projet ou votre entreprise a besoin d'une présence en ligne ? Contactez-moi ! </h3>
           <div className="form-group">
             <label htmlFor="name">Nom</label>
             <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Votre nom" required />

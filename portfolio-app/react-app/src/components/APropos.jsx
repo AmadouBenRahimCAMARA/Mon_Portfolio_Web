@@ -12,7 +12,7 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <img src="/photo.jpg" alt="RAHIM CAMARA" className="profile-picture" />
+        <img src="/My_Photograph.png" alt="RAHIM CAMARA" className="profile-picture" />
         <h1>RAHIM CAMARA</h1>
         <TypeAnimation
           sequence={[
